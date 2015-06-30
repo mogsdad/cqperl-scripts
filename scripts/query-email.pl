@@ -141,7 +141,7 @@ Main: {
         exit 0;
     }
     ## Add HTML table
-    $table = `ratlperl csv2html.cqpl headers < $csvfile`;
+    $table = `ratlperl csv2html.pl headers < $csvfile`;
     ## Modify style attributes
     $table =~ s/<table>/<table border="1" cellpadding="5" cellspacing="0" style="background-color:#eefdfd;border:1px solid black;font-family:arial,helvetica,sans-serif;">/ ;
     ## Turn defect numbers into links to CqWeb interface
